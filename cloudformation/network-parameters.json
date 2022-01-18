@@ -1,6 +1,6 @@
 [
-    "EnvironmentName=capstone-project",
-    "VpcCIDR=192.168.0.0/16",
-    "PublicSubnet1CIDR=192.168.0.0/18",
-    "PublicSubnet2CIDR=192.168.64.0/18"
+    "EnvironmentName=test-project",
+    "VpcCIDR=172.31.0.0/16",
+    "PublicSubnet1CIDR=172.31.0.0/20",
+    "PublicSubnet2CIDR=172.31.16.0/20"
 ]

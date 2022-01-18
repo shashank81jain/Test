@@ -1,5 +1,5 @@
 setup:
-	python3 -m venv ~/.devops
+	python3 -m venv ~/.Test
 
 install:
 	pip install --upgrade pip &&\

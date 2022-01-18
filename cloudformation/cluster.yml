@@ -1,10 +1,10 @@
 Description: >
-  Felix Lutze / Capstone Project
+  Shashank Jain / Test Project
   Creates an Amazon EKS Cluster
 Parameters:
   EnvironmentName:
     Description: An Environment name that will be prefixed to resources
-    Default: capstone-project
+    Default: test-project
     Type: String
 
 Resources:
@@ -35,7 +35,7 @@ Resources:
         - arn:aws:iam::aws:policy/AmazonEKSServicePolicy
         - arn:aws:iam::aws:policy/ElasticLoadBalancingFullAccess
 
-  CapstoneProjectCluster:
+  TestProjectCluster:
     Type: AWS::EKS::Cluster
     Properties:
       Version: "1.19"
@@ -52,7 +52,7 @@ Resources:
 Outputs:
   EksId:
     Description: EKS id
-    Value: !Ref CapstoneProjectCluster
+    Value: !Ref TestProjectCluster
     Export:
       Name: !Sub ${EnvironmentName}-EKSCluster
 

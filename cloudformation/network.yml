@@ -1,27 +1,27 @@
 ---
 Description: >
-  Felix Lutze / Capstone Project
+  Shashank Jain / Test Project
   Creates a VPC with public subnets for EKS.
 
 Parameters:
   EnvironmentName:
     Description: An environment name that will be prefixed to resource names
-    Default: capstone-project
+    Default: test-project
     Type: String
 
   VpcCIDR:
     Type: String
-    Default: 192.168.0.0/16
+    Default: 172.31.0.0/16
     Description: The CIDR range for the VPC.
 
   PublicSubnet1CIDR:
     Type: String
-    Default: 192.168.0.0/18
+    Default: 172.31.0.0/20
     Description: CidrBlock for public subnet 1
 
   PublicSubnet2CIDR:
     Type: String
-    Default: 192.168.64.0/18
+    Default: 172.31.16.0/20
     Description: CidrBlock for public subnet 2
 
 Metadata:
